@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JavaScript Prompts</title>
+    <script type='text/javascript'>
+    function myPrompt()
+    {
+        var person=prompt('Enter your Name','friend')
+        if(person.length>0)
+        {
+            document.getElementById('para').innerHTML='Hey '+person+'! How are you today?';
+        }
+        if(person.length==0)
+        {
+            alert('Hey!,no input');
+        }
+    }
+    </script>
+</head>
+<body>
+    <p>Experimenting with JavaScript Prompts</p>
+    <button onclick="myPrompt()">click me</button>
+    <p id='para'></p>
+    <!-- page content goes here -->
+</body>
+</html>
